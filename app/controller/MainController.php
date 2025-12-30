@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 class LoginController {
 
     // Tampilkan halaman login
@@ -28,3 +29,10 @@ class LoginController {
     }
 }
 ?>
+=======
+class MainController {
+    public function home() {
+        include "app/view/home.php";
+    }
+}
+>>>>>>> aec976d (Menambahkan file admin)

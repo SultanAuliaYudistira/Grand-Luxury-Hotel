@@ -127,6 +127,7 @@ if (session_status() === PHP_SESSION_NONE) {
         </div>
         <div style="width: 250px; margin-bottom: 20px;">
             <h3 style="margin: 0 0 15px 0;">Contact Us</h3>
+<<<<<<< HEAD
             <p style="color: white;">📍 123 Luxury Avenue, Downtown District<br>Jakarta, Indonesia 12345</p>
             <p style="color: white;">📞 +62 21 1234 5678</p>
             <p style="color: white;">✉ info@grandluxuryhotel.com</p>
@@ -138,6 +139,11 @@ if (session_status() === PHP_SESSION_NONE) {
             <p><a href="?page=login" style="color: gold; text-decoration:none;">Dining</a></p>
             <p><a href="?page=login" style="color: gold; text-decoration:none;">Amenities</a></p>
             <p><a href="?page=login" style="color: gold; text-decoration:none;">Contact</a></p>
+=======
+            <p style="color: white;">📍 Jl Sudirman<br>Jakarta, Indonesia 12345</p>
+            <p style="color: white;">📞 +62 8128 2248 688</p>
+            <p style="color: white;">✉ grandluxuryhotel@gmail.com</p>
+>>>>>>> aec976d (Menambahkan file admin)
         </div>
         <div style="width: 250px; margin-bottom: 20px;">
             <h3 style="margin: 0 0 15px 0;">Follow Us</h3>
