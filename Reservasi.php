@@ -2,32 +2,22 @@
 
 class Reservasi
 {
-    // fungsi nyata: simpan reservasi
-    public function simpan($data)
-    {
-        require __DIR__ . '/../../config/koneksi.php';
+    public $id_reservasi;
+    public $id_user;
+    public $id_kamar;
+    public $tipe_kamar;
+    public $tanggal_checkin;
+    public $tanggal_checkout;
+    public $jumlah_tamu;
+    public $status;
 
-        return mysqli_query(
-            $koneksi,
-            "INSERT INTO reservasi (id_kamar, nama_pemesan, tanggal)
-             VALUES (
-                '{$data['id_kamar']}',
-                '{$data['nama']}',
-                '{$data['tanggal']}'
-             )"
-        );
+    public function buatReservasi()
+    {
+        return true;
     }
 
-    // fungsi nyata: ambil reservasi terakhir
-    public function getLast()
+    public function batalReservasi()
     {
-        require __DIR__ . '/../../config/koneksi.php';
-
-        $query = mysqli_query(
-            $koneksi,
-            "SELECT * FROM reservasi ORDER BY id_reservasi DESC LIMIT 1"
-        );
-
-        return mysqli_fetch_assoc($query);
+        return true;
     }
 }
