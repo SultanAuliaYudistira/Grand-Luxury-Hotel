@@ -2,32 +2,19 @@
 
 class Pembayaran
 {
-    // fungsi nyata: simpan pembayaran
-    public function simpan($data)
-    {
-        require __DIR__ . '/../../config/koneksi.php';
+    public $id_pembayaran;
+    public $id_reservasi;
+    public $metode_bayar;
+    public $jumlah;
+    public $status;
 
-        return mysqli_query(
-            $koneksi,
-            "INSERT INTO pembayaran (id_reservasi, total, metode)
-             VALUES (
-                '{$data['id_reservasi']}',
-                '{$data['total']}',
-                '{$data['metode']}'
-             )"
-        );
+    public function prosesPembayaran()
+    {
+        return true;
     }
 
-    // fungsi nyata: cek status pembayaran
-    public function getStatus($id_reservasi)
+    public function cekStatusPembayaran()
     {
-        require __DIR__ . '/../../config/koneksi.php';
-
-        $query = mysqli_query(
-            $koneksi,
-            "SELECT * FROM pembayaran WHERE id_reservasi='$id_reservasi'"
-        );
-
-        return mysqli_fetch_assoc($query);
+        return $this->status;
     }
 }
